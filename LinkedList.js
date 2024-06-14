@@ -125,7 +125,6 @@ class LinkedList {
         let removedNode = this.head;
         this.head = this.head.next;
         this.size--;
-        return removedNode;
     }
 
     // Assignment:
@@ -149,6 +148,7 @@ class LinkedList {
         }
         previous.next = null;
         this.size--;
+        return current
     }
 
     // Remove at a specifc index
@@ -229,6 +229,7 @@ linkedList.insertAt(15, 2);
 linkedList.updateAt(25, 3);
 
 linkedList.append(100);
+linkedList.append(111);
 linkedList.removeLast();
 // 30 -> 15 -> 10 -> null
 linkedList.printList();
